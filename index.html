@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="LÖWEN CLUB — First Drop. Camiseta Básica Löwen Club. Oversize, cropped y confeccionada en 100% algodón orgánico."
+    >
+
+    <title>LÖWEN CLUB — First Drop</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         CABECERA
+    ========================== -->
+
+    <header class="header">
+
+        <a href="#" class="logo">
+            LÖWEN CLUB
+        </a>
+
+
+        <nav>
+
+            <a href="#producto">
+                PRODUCTO
+            </a>
+
+            <a href="#detalles">
+                DETALLES
+            </a>
+
+            <a href="#tallas">
+                TALLAS
+            </a>
+
+            <a href="#contacto">
+                CONTACTO
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =========================
+         PRODUCTO
+    ========================== -->
+
+    <main>
+
+
+        <section
+            class="hero"
+            id="producto"
+        >
+
+
+            <!-- GALERÍA -->
+
+            <div class="gallery">
+
+
+                <div class="main-photo">
+
+                    <img
+                        id="mainImage"
+                        src="images/azul.jpg"
+                        alt="First Drop - Camiseta Básica Löwen Club - Azul"
+                    >
+
+                </div>
+
+
+                <!-- MINIATURAS -->
+
+                <div class="thumbnails">
+
+
+                    <button
+                        class="thumbnail active"
+                        data-color="AZUL"
+                        data-image="images/azul.jpg"
+                    >
+
+                        <img
+                            src="images/azul.jpg"
+                            alt="Camiseta básica Löwen Club azul"
+                        >
+
+                    </button>
+
+
+
+                    <button
+                        class="thumbnail"
+                        data-color="BLANCA"
+                        data-image="images/blanca.jpg"
+                    >
+
+                        <img
+                            src="images/blanca.jpg"
+                            alt="Camiseta básica Löwen Club blanca"
+                        >
+
+                    </button>
+
+
+
+                    <button
+                        class="thumbnail"
+                        data-color="GRIS"
+                        data-image="images/gris.png"
+                    >
+
+                        <img
+                            src="images/gris.png"
+                            alt="Camiseta básica Löwen Club gris"
+                        >
+
+                    </button>
+
+
+
+                    <button
+                        class="thumbnail"
+                        data-color="CREMA"
+                        data-image="images/crema.jpg"
+                    >
+
+                        <img
+                            src="images/crema.jpg"
+                            alt="Camiseta básica Löwen Club crema"
+                        >
+
+                    </button>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- INFORMACIÓN DEL PRODUCTO -->
+
+            <div class="product-info">
+
+
+                <p class="small-title">
+
+                    LÖWEN CLUB · EST. 2025
+
+                </p>
+
+
+                <p class="drop-name">
+
+                    FIRST DROP
+
+                </p>
+
+
+                <h1>
+
+                    CAMISETA<br>
+                    BÁSICA<br>
+                    LÖWEN CLUB
+
+                </h1>
+
+
+                <div class="product-features">
+
+                    <span>
+                        OVERSIZE
+                    </span>
+
+                    <span>
+                        CROPPED
+                    </span>
+
+                    <span>
+                        UNISEX
+                    </span>
+
+                </div>
+
+
+                <p class="price">
+
+                    28,00 €
+
+                </p>
+
+
+                <p class="description">
+
+                    Nuestra primera camiseta.
+                    Un diseño básico con corte
+                    oversized y cropped, pensado
+                    para conseguir una silueta
+                    amplia y actual.
+
+                </p>
+
+
+                <p class="fabric-description">
+
+                    240 GSM · 100% ALGODÓN ORGÁNICO
+                    · SINGLE JERSEY
+
+                </p>
+
+
+
+                <!-- COLOR -->
+
+                <div class="option">
+
+
+                    <div class="option-header">
+
+                        <span>
+                            COLOR
+                        </span>
+
+
+                        <strong id="selectedColor">
+
+                            AZUL
+
+                        </strong>
+
+                    </div>
+
+
+
+                    <div class="buttons">
+
+
+                        <button
+                            class="color active"
+                            data-color="AZUL"
+                            data-image="images/azul.jpg"
+                        >
+                            AZUL
+                        </button>
+
+
+
+                        <button
+                            class="color"
+                            data-color="BLANCA"
+                            data-image="images/blanca.jpg"
+                        >
+                            BLANCA
+                        </button>
+
+
+
+                        <button
+                            class="color"
+                            data-color="GRIS"
+                            data-image="images/gris.png"
+                        >
+                            GRIS
+                        </button>
+
+
+
+                        <button
+                            class="color"
+                            data-color="CREMA"
+                            data-image="images/crema.jpg"
+                        >
+                            CREMA
+                        </button>
+
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- TALLAS -->
+
+                <div
+                    class="option"
+                    id="tallas"
+                >
+
+
+                    <div class="option-header">
+
+                        <span>
+                            TALLA
+                        </span>
+
+
+                        <strong id="selectedSize">
+
+                            SELECCIONA
+
+                        </strong>
+
+                    </div>
+
+
+
+                    <div class="buttons sizes">
+
+
+                        <button data-size="S">
+                            S
+                        </button>
+
+
+                        <button data-size="M">
+                            M
+                        </button>
+
+
+                        <button data-size="L">
+                            L
+                        </button>
+
+
+                        <button data-size="XL">
+                            XL
+                        </button>
+
+
+                        <button data-size="2XL">
+                            2XL
+                        </button>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- PEDIDO -->
+
+                <a
+                    href="#contacto"
+                    class="order-button"
+                >
+
+                    PEDIR AHORA
+
+                </a>
+
+
+                <p class="order-info">
+
+                    Consulta disponibilidad, talla y color
+                    para realizar tu pedido.
+
+                </p>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =========================
+             DETALLES
+        ========================== -->
+
+        <section
+            class="details"
+            id="detalles"
+        >
+
+
+            <div class="details-header">
+
+                <p>
+                    FIRST DROP · LÖWEN CLUB
+                </p>
+
+
+                <h2>
+
+                    OVERSIZE.<br>
+                    CROPPED.<br>
+                    240 GSM.
+
+                </h2>
+
+            </div>
+
+
+
+            <div class="details-grid">
+
+
+                <div>
+
+                    <span>
+                        01
+                    </span>
+
+                    <h3>
+                        COMPOSICIÓN
+                    </h3>
+
+                    <p>
+                        100% algodón orgánico.
+                    </p>
+
+                </div>
+
+
+
+                <div>
+
+                    <span>
+                        02
+                    </span>
+
+                    <h3>
+                        GRAMAJE
+                    </h3>
+
+                    <p>
+                        240 GSM.
+                    </p>
+
+                </div>
+
+
+
+                <div>
+
+                    <span>
+                        03
+                    </span>
+
+                    <h3>
+                        CORTE
+                    </h3>
+
+                    <p>
+                        Oversize · Cropped.
+                    </p>
+
+                </div>
+
+
+
+                <div>
+
+                    <span>
+                        04
+                    </span>
+
+                    <h3>
+                        FIT
+                    </h3>
+
+                    <p>
+                        Unisex · Silueta amplia.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =========================
+             GUÍA DE TALLAS
+        ========================== -->
+
+        <section
+            class="size-section"
+            id="guia-tallas"
+        >
+
+
+            <div class="size-title">
+
+                <p>
+                    SIZE GUIDE
+                </p>
+
+
+                <h2>
+                    ENCUENTRA TU TALLA.
+                </h2>
+
+            </div>
+
+
+
+            <div class="size-table-wrapper">
+
+
+                <table>
+
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                TALLA
+                            </th>
+
+                            <th>
+                                PECHO
+                            </th>
+
+                            <th>
+                                LARGO
+                            </th>
+
+                            <th>
+                                MANGA
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+
+                        <tr>
+
+                            <td>S</td>
+                            <td>53 cm</td>
+                            <td>65 cm</td>
+                            <td>24 cm</td>
+
+                        </tr>
+
+
+
+                        <tr>
+
+                            <td>M</td>
+                            <td>57 cm</td>
+                            <td>69 cm</td>
+                            <td>25 cm</td>
+
+                        </tr>
+
+
+
+                        <tr>
+
+                            <td>L</td>
+                            <td>60 cm</td>
+                            <td>71 cm</td>
+                            <td>26 cm</td>
+
+                        </tr>
+
+
+
+                        <tr>
+
+                            <td>XL</td>
+                            <td>64 cm</td>
+                            <td>73 cm</td>
+                            <td>27 cm</td>
+
+                        </tr>
+
+
+
+                        <tr>
+
+                            <td>2XL</td>
+                            <td>68 cm</td>
+                            <td>76 cm</td>
+                            <td>28 cm</td>
+
+                        </tr>
+
+
+                    </tbody>
+
+                </table>
+
+
+            </div>
+
+
+            <p class="size-note">
+
+                Las medidas pueden presentar una tolerancia estándar
+                de producción de ±5%.
+
+            </p>
+
+
+        </section>
+
+
+
+        <!-- =========================
+             CUIDADOS
+        ========================== -->
+
+        <section class="manufacturing">
+
+
+            <div class="manufacturing-content">
+
+
+                <p class="section-label">
+                    CUIDADOS
+                </p>
+
+
+                <h2>
+                    CUIDA TU LÖWEN.
+                </h2>
+
+
+                <div class="care-grid">
+
+
+                    <div>
+
+                        <strong>
+                            30 ºC
+                        </strong>
+
+                        <p>
+                            Lavar del revés a 30 ºC
+                            con colores similares.
+                        </p>
+
+                    </div>
+
+
+
+                    <div>
+
+                        <strong>
+                            SIN LEJÍA
+                        </strong>
+
+                        <p>
+                            No utilizar lejía
+                            ni productos agresivos.
+                        </p>
+
+                    </div>
+
+
+
+                    <div>
+
+                        <strong>
+                            SIN SECADORA
+                        </strong>
+
+                        <p>
+                            Evitar la secadora para
+                            preservar el fit y el color.
+                        </p>
+
+                    </div>
+
+
+
+                    <div>
+
+                        <strong>
+                            ALGODÓN ORGÁNICO
+                        </strong>
+
+                        <p>
+                            100% algodón orgánico
+                            certificado GOTS.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =========================
+             MATERIAL
+        ========================== -->
+
+        <section class="certification">
+
+
+            <p class="section-label">
+                MATERIAL
+            </p>
+
+
+            <h2>
+                100% ALGODÓN ORGÁNICO.
+            </h2>
+
+
+            <p>
+
+                Fabricada en algodón orgánico de
+                240 GSM y tejido Single Jersey.
+
+                Una construcción pensada para ofrecer
+                una camiseta con cuerpo, caída amplia
+                y un acabado limpio.
+
+            </p>
+
+
+            <div class="gots">
+                GOTS
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =========================
+             CONTACTO
+        ========================== -->
+
+        <section
+            class="contact"
+            id="contacto"
+        >
+
+
+            <p>
+                FIRST DROP · LÖWEN CLUB
+            </p>
+
+
+            <h2>
+
+                ¿QUIERES<br>
+                LA TUYA?
+
+            </h2>
+
+
+            <p>
+
+                Escríbenos para consultar
+                disponibilidad, tallas y colores.
+
+            </p>
+
+
+            <a
+                href="https://www.instagram.com/lowenclub.es/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="instagram-button"
+            >
+
+                INSTAGRAM
+
+            </a>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <span>
+            LÖWEN CLUB
+        </span>
+
+        <span>
+            FIRST DROP · EST. 2025
+        </span>
+
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

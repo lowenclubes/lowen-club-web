@@ -1,0 +1,570 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f4f0;
+    color: #111;
+    line-height: 1.5;
+}
+
+
+/* HEADER */
+
+.header {
+    width: 100%;
+    padding: 25px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(245, 244, 240, .95);
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    color: #111;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    color: #111;
+    text-decoration: none;
+    font-size: 10px;
+    letter-spacing: 1.7px;
+    transition: .2s;
+}
+
+nav a:hover {
+    opacity: .5;
+}
+
+
+/* PRODUCTO */
+
+.hero {
+    min-height: calc(100vh - 75px);
+    padding: 60px 5% 80px;
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(340px, .85fr);
+    gap: 70px;
+    align-items: center;
+}
+
+
+/* GALERÍA */
+
+.gallery {
+    width: 100%;
+}
+
+.main-photo {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    background: #e7e5df;
+}
+
+.main-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: opacity .25s ease, transform .5s ease;
+}
+
+.main-photo:hover img {
+    transform: scale(1.02);
+}
+
+.thumbnails {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.thumbnail {
+    border: 1px solid transparent;
+    padding: 0;
+    background: transparent;
+    cursor: pointer;
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+}
+
+.thumbnail.active {
+    border-color: #111;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* INFORMACIÓN */
+
+.product-info {
+    max-width: 510px;
+}
+
+.small-title {
+    font-size: 10px;
+    letter-spacing: 2.5px;
+    margin-bottom: 18px;
+}
+
+.drop-name {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.product-info h1 {
+    font-size: clamp(42px, 5.5vw, 75px);
+    line-height: .88;
+    letter-spacing: -4px;
+    margin-bottom: 20px;
+}
+
+
+/* CARACTERÍSTICAS */
+
+.product-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-bottom: 25px;
+}
+
+.product-features span {
+    border: 1px solid #111;
+    padding: 8px 11px;
+    font-size: 9px;
+    letter-spacing: 1.5px;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.description {
+    color: #555;
+    line-height: 1.7;
+    max-width: 450px;
+    margin-bottom: 18px;
+}
+
+.fabric-description {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+    margin-bottom: 38px;
+}
+
+
+/* OPCIONES */
+
+.option {
+    margin-bottom: 28px;
+}
+
+.option-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 11px;
+}
+
+.option-header span {
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.option-header strong {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    color: #666;
+    font-weight: 400;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.buttons button {
+    background: transparent;
+    border: 1px solid #ccc;
+    color: #111;
+    padding: 12px 16px;
+    cursor: pointer;
+    font-size: 10px;
+    letter-spacing: 1px;
+    transition: .2s;
+}
+
+.buttons button:hover,
+.buttons button.active {
+    background: #111;
+    color: #fff;
+    border-color: #111;
+}
+
+
+/* PEDIDO */
+
+.order-button {
+    display: inline-block;
+    background: #111;
+    color: #fff;
+    text-decoration: none;
+    padding: 18px 36px;
+    font-size: 10px;
+    letter-spacing: 2px;
+    transition: .25s;
+    margin-top: 5px;
+}
+
+.order-button:hover {
+    background: #333;
+    transform: translateY(-1px);
+}
+
+.order-info {
+    margin-top: 12px;
+    font-size: 11px;
+    color: #777;
+}
+
+
+/* DETALLES */
+
+.details {
+    background: #111;
+    color: #fff;
+    padding: 110px 5%;
+}
+
+.details-header {
+    max-width: 900px;
+    margin-bottom: 80px;
+}
+
+.details-header p {
+    font-size: 10px;
+    letter-spacing: 2.5px;
+    margin-bottom: 20px;
+}
+
+.details-header h2 {
+    font-size: clamp(42px, 5.5vw, 80px);
+    line-height: .92;
+    letter-spacing: -3px;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.details-grid span {
+    font-size: 10px;
+    color: #777;
+}
+
+.details-grid h3 {
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin: 18px 0 10px;
+}
+
+.details-grid p {
+    color: #aaa;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+
+/* TALLAS */
+
+.size-section {
+    padding: 110px 5%;
+    background: #f5f4f0;
+}
+
+.size-title {
+    margin-bottom: 55px;
+}
+
+.size-title p {
+    font-size: 10px;
+    letter-spacing: 2.5px;
+    margin-bottom: 18px;
+}
+
+.size-title h2 {
+    font-size: clamp(38px, 5vw, 70px);
+    line-height: .95;
+    letter-spacing: -3px;
+}
+
+.size-table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+}
+
+th {
+    text-align: left;
+    font-size: 10px;
+    letter-spacing: 1.8px;
+    padding: 18px 12px;
+    border-bottom: 1px solid #aaa;
+}
+
+td {
+    padding: 18px 12px;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+}
+
+td:first-child {
+    font-weight: 700;
+}
+
+.size-note {
+    margin-top: 20px;
+    font-size: 11px;
+    color: #777;
+}
+
+
+/* CUIDADOS */
+
+.manufacturing {
+    background: #e8e6df;
+    padding: 110px 5%;
+}
+
+.manufacturing-content {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.section-label {
+    font-size: 10px;
+    letter-spacing: 2.5px;
+    margin-bottom: 20px;
+}
+
+.manufacturing h2,
+.certification h2 {
+    font-size: clamp(40px, 5vw, 70px);
+    line-height: .95;
+    letter-spacing: -3px;
+    margin-bottom: 60px;
+}
+
+.care-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+}
+
+.care-grid strong {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+}
+
+.care-grid p {
+    margin-top: 12px;
+    color: #555;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+
+/* MATERIAL */
+
+.certification {
+    padding: 110px 5%;
+    text-align: center;
+    background: #fff;
+}
+
+.certification h2 {
+    margin-bottom: 25px;
+}
+
+.certification > p:not(.section-label) {
+    max-width: 600px;
+    margin: 0 auto 40px;
+    color: #666;
+    line-height: 1.7;
+}
+
+.gots {
+    width: 90px;
+    height: 90px;
+    margin: auto;
+    border: 2px solid #111;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
+/* CONTACTO */
+
+.contact {
+    padding: 125px 5%;
+    text-align: center;
+}
+
+.contact > p:first-child {
+    font-size: 10px;
+    letter-spacing: 3px;
+    margin-bottom: 24px;
+}
+
+.contact h2 {
+    font-size: clamp(45px, 6vw, 85px);
+    line-height: .9;
+    letter-spacing: -4px;
+    margin-bottom: 25px;
+}
+
+.contact > p:not(:first-child) {
+    max-width: 450px;
+    margin: 0 auto 30px;
+    color: #666;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.instagram-button {
+    display: inline-block;
+    background: #111;
+    color: #fff;
+    text-decoration: none;
+    padding: 18px 36px;
+    font-size: 10px;
+    letter-spacing: 2px;
+    transition: .2s;
+}
+
+.instagram-button:hover {
+    background: #333;
+}
+
+
+/* FOOTER */
+
+footer {
+    padding: 25px 5%;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+
+
+/* MÓVIL */
+
+@media (max-width: 800px) {
+
+    .header {
+        padding: 19px 20px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .hero {
+        min-height: auto;
+        grid-template-columns: 1fr;
+        padding: 25px 20px 65px;
+        gap: 40px;
+    }
+
+    .product-info {
+        max-width: none;
+    }
+
+    .product-info h1 {
+        font-size: clamp(45px, 14vw, 68px);
+        letter-spacing: -3px;
+    }
+
+    .details {
+        padding: 75px 20px;
+    }
+
+    .details-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 42px 20px;
+    }
+
+    .size-section {
+        padding: 75px 20px;
+    }
+
+    .manufacturing {
+        padding: 75px 20px;
+    }
+
+    .care-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px 20px;
+    }
+
+    .certification {
+        padding: 80px 20px;
+    }
+
+    .contact {
+        padding: 90px 20px;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+}
